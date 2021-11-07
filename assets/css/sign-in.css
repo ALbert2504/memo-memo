@@ -1,0 +1,98 @@
+.sign-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+}
+.sign-in__background {
+  height: 100%;
+  width: 50%;
+  background-image: url('../media/images/sign-in-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sign-in__content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in__form-wrapper {
+  max-width: 20rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.375rem;
+  border: solid 0.1rem var(--primary-light);
+  box-shadow: 1rem 1rem 2rem 0 var(--primary-lighter);
+}
+.sign-in__form-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.sign-in__form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.sign-in__form-group:not(:first-child) {
+  margin-top: 1rem;
+}
+.sign-in__label {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.sign-in__input {
+  width: 100%;
+}
+.sign-in__error-message {
+  display: none;
+  color: var(--invalid-color);
+  animation: errorAppearing .3s forwards ease-in-out;
+  font-size: 0.75rem;
+}
+.sign-in__input.invalid + .sign-in__error-message {
+  display: block;
+}
+.sign-in__submit {
+  margin-top: 0.75rem;
+}
+.sign-in__link {
+  margin-top: 0.375rem;
+  color: var(--primary);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+.sign-in__link:hover {
+  color: var(--primary-lighter);
+  text-decoration: none;
+}
+
+@keyframes errorAppearing {
+  0% {
+    transform: translateX(-1rem);
+  }
+  25% {
+    transform: translateX(1rem);
+  }
+  50% {
+    transform: translateX(-1rem);
+  }
+  75% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

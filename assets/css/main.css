@@ -1,0 +1,25 @@
+/* Iternal */
+@import url('../media/fonts/fonts.css');
+@import url('./var.css');
+
+/* UI Kit */
+@import url('./ui/buttons.css');
+@import url('./ui/form-controls.css');
+@import url('./ui/laoders.css');
+
+/* Common */
+@import url('./common/header.css');
+
+/* Pages */
+@import url('./sign-in.css');
+@import url('./home.css');
+
+html, body {
+  font-size: 16px;
+  font-family: 'Averia Sans Libre', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}

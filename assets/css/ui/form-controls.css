@@ -1,0 +1,40 @@
+/*
+*** Input
+*/
+.form-control {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  border: solid var(--gray) 0.1rem;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.form-control:hover {
+  border-color: var(--primary-light);
+}
+.form-control:focus {
+  border-color: var(--primary-light);
+  background-color: var(--primary-opacity);
+  box-shadow: 0 0 0.5rem 0.05rem var(--primary-light);
+}
+.form-control.valid {
+  border-color: var(--valid-color);
+}
+.form-control.valid:focus {
+  border-color: var(--valid-color);
+  background-color: var(--valid-bg);
+  box-shadow: 0 0 0.5rem 0.05rem var(--valid-color);
+}
+.form-control.invalid {
+  border-color: var(--invalid-color);
+}
+.form-control.invalid:focus {
+  border-color: var(--invalid-color);
+  background-color: var(--invalid-bg);
+  box-shadow: 0 0 0.5rem 0.05rem var(--invalid-color);
+}
+
+
+
+/*
+*** Input[type="file"]
+*/

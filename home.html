@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4ad8c0171d.js" crossorigin="anonymous" async></script>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <h1 class="header__logo">
+          Memo-Memo
+        </h1>
+        <div class="header__list">
+          <h3 class="header__user-name"></h3>
+          <button class="header__log-out btn--secondary">
+            Log out
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="memories">
+      <div class="container">
+        <div class="memories__content">
+          <div class="memories__list-wrapper">
+            <h3 class="memories__list-title">
+              Memories
+            </h3>
+            <ul class="memories__list">
+              <!-- Data from server -->
+            </ul>
+          </div>
+          <div class="memories__form-wrapper">
+            <h3 class="memories__form-title">
+              Add a memory
+            </h3>
+            <form class="memories__form">
+              <div class="memories__form-group">
+                <label class="memories__label" for="title">Title</label>
+                <input class="memories__input memories__field form-control" type="text" name="title" id="title">
+              </div>
+              <div class="memories__form-group">
+                <label class="memories__label" for="title">Description</label>
+                <textarea class="memories__textarea memories__field form-control" type="text" name="description"
+                  id="description"></textarea>
+              </div>
+              <div class="memories__form-group">
+                <label for="image" class="memories__attach btn--info">
+                  Attach an image
+                  <input class="memories__upload" type="file" name="image" id="image">
+                </label>
+                <div class="memories__image-wrapper memories__image-wrapper--hidden">
+                  <img class="memories__image" src="" alt="">
+                  <i class="memories__image_remove fas fa-times"></i>
+                </div>
+              </div>
+              <button class="memories__submit btn--primary">Post</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/home/user.js" type="module"></script>
+  <script src="./assets/js/home/memory.js" type="module"></script>
+</body>
+
+</html>

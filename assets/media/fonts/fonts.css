@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-Bold.eot');
+    src: url('AveriaSansLibre-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-Bold.woff2') format('woff2'),
+        url('AveriaSansLibre-Bold.woff') format('woff'),
+        url('AveriaSansLibre-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-Light.eot');
+    src: url('AveriaSansLibre-Light.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-Light.woff2') format('woff2'),
+        url('AveriaSansLibre-Light.woff') format('woff'),
+        url('AveriaSansLibre-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-Regular.eot');
+    src: url('AveriaSansLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-Regular.woff2') format('woff2'),
+        url('AveriaSansLibre-Regular.woff') format('woff'),
+        url('AveriaSansLibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-Italic.eot');
+    src: url('AveriaSansLibre-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-Italic.woff2') format('woff2'),
+        url('AveriaSansLibre-Italic.woff') format('woff'),
+        url('AveriaSansLibre-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-BoldItalic.eot');
+    src: url('AveriaSansLibre-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-BoldItalic.woff2') format('woff2'),
+        url('AveriaSansLibre-BoldItalic.woff') format('woff'),
+        url('AveriaSansLibre-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    src: url('AveriaSansLibre-LightItalic.eot');
+    src: url('AveriaSansLibre-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AveriaSansLibre-LightItalic.woff2') format('woff2'),
+        url('AveriaSansLibre-LightItalic.woff') format('woff'),
+        url('AveriaSansLibre-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

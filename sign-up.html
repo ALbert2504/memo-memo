@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="sign-in">
+    <div class="sign-in__background"></div>
+    <div class="sign-in__content">
+      <div class="sign-in__form-wrapper">
+        <h2 class="sign-in__form-title">
+          Sign up
+        </h2>
+        <form class="sign-in__form">
+          <div class="sign-in__form-group">
+            <label class="sign-in__label" for="firstName">
+              First name
+            </label>
+            <input class="sign-in__input form-control" type="text" name="firstName" id="firstName">
+            <p class="sign-in__error-message">
+              Firstname must contain at least 2 charcters and must not contain number
+            </p>
+          </div>
+          <div class="sign-in__form-group">
+            <label class="sign-in__label" for="lastName">
+              Lastname
+            </label>
+            <input class="sign-in__input form-control" type="text" name="lastName" id="lastName">
+            <p class="sign-in__error-message">
+              Lastname must contain at least 2 charcters and must not contain number
+            </p>
+          </div>
+          <div class="sign-in__form-group">
+            <label class="sign-in__label" for="email">
+              E-mail
+            </label>
+            <input class="sign-in__input form-control" type="email" name="email" id="email">
+            <p class="sign-in__error-message">
+              Email must contain @ and . symbols and domain at the end
+            </p>
+          </div>
+          <div class="sign-in__form-group">
+            <label class="sign-in__label" for="password">
+              Password
+            </label>
+            <input class="sign-in__input form-control" type="password" name="password" id="password">
+            <p class="sign-in__error-message">
+              Password must contain at least 8 characters
+            </p>
+          </div>
+          <div class="sign-in__form-group">
+            <label class="sign-in__label" for="confirmPassword">
+              Confirm Password
+            </label>
+            <input class="sign-in__input form-control" type="password" name="confirmPassword" id="confirmPassword">
+            <p class="sign-in__error-message">
+              Passwords do not match
+            </p>
+          </div>
+          <button class="sign-in__submit btn--primary">
+            Sign up
+          </button>
+          <a class="sign-in__link" href="./index.html">
+            Already have an account? Sign In
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/signUp.js" type="module"></script>
+</body>
+</html>

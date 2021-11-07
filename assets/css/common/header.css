@@ -1,0 +1,22 @@
+.header {
+  padding: 1rem 0;
+  background-color: var(--primary-lighter);
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__user-name {
+  color: var(--white);
+  margin-right: 0.5rem;
+}
