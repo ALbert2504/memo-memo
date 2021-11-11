@@ -11,6 +11,6 @@ export class Memory {
     this.title = title;
     this.description = description;
     this.image = image;
-    this.date = new Date().toISOString();
+    this.date = new Date().valueOf();
   }
 }

@@ -1,9 +1,10 @@
 // Imports
-import { memoryApi } from '../util/api/index.js';
-import { isFormValid } from '../util/helpers.js';
-import { Memory } from '../util/models.js';
-import { MemoryItem } from './markupCreators.js';
-import { diagramLoader } from '../util/ui/loaders/index.js';
+import { memoryApi } from './util/api/index.js';
+import { isFormValid } from './util/helpers.js';
+import { Memory } from './util/models.js';
+import { MemoryItem } from './util/markupCreators.js';
+import { diagramLoader } from './util/ui/loaders/index.js';
+import { setHtmlFromArray } from './util/helpers.js';
 
 // Elements
 const $memoriesForm = document.querySelector('.memories__form');
@@ -84,7 +85,7 @@ async function getMemories() {
   diagramLoader.showLoader($memoriesListWrapper);
   const memories = await memoryApi.getMemories();
   console.log(memories);
-  renderMemories(memories);
+  setHtmlFromArray($memoriesList, memories, MemoryItem.render);
   diagramLoader.hideLoader();
 }
 
@@ -93,10 +94,4 @@ function renderImage(image) {
   $memoriesImage.src = image;
   $memoriesImageWrapper.classList.remove('memories__image-wrapper--hidden');
   $memoriesAttach.classList.add('memories__attach--hidden');
-}
-
-function renderMemories(memories = {}) {
-  const convertedMemories = Object.entries(memories);
-
-  $memoriesList.innerHTML = memories && convertedMemories.length ? convertedMemories.map(MemoryItem.render).join('') : null;
 }

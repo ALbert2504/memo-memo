@@ -1,5 +1,5 @@
 // Imports
-import { authApi } from "../util/api/index.js";
+import { authApi } from "./util/api/index.js";
 
 // Elements
 const $headerUserName = document.querySelector('.header__user-name');

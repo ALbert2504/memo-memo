@@ -1,7 +1,7 @@
 export class MemoryItem {
-  static render([id, item]) {
+  static render(item) {
     return `
-      <li class="memories__item" data-id="${id}" id="${id}">
+      <li class="memories__item" data-id="${item.id}" id="${item.id}">
         <a class="memories__item-link" href="#">
           <div class="memories__item_image-container">
             <img class="memories__item_image"

@@ -38,4 +38,9 @@ export const createLoader = (markup) => {
   laoderWrapper.setAttribute('class', 'loader__wrapper');
   laoderWrapper.innerHTML = markup;
   return laoderWrapper;
+};
+
+export const setHtmlFromArray = ($element, arr = [], rendererFunction) => {
+  const markup = arr && arr.length ? arr.map(rendererFunction).join('') : null;
+  $element.innerHTML = markup;
 }

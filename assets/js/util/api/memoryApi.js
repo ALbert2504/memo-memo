@@ -24,7 +24,47 @@ class Memory {
     const response = await fetch(`${BASE_URL}${this.#endpoint}/${this.#uid}.json?auth=${this.#accessToken}`);
     const responseData = await response.json();
 
-    return responseData;
+    const arr = this.#transformObjectToArray(responseData);
+    return arr.map(this.#transformArr);
+  }
+
+  async getAllMemories() {
+    const response = await fetch(`${BASE_URL}${this.#endpoint}.json?auth=${this.#accessToken}`);
+    const responseData = await response.json();
+
+    return this.#transformObjectsToArrays(responseData);
+  }
+
+  #transformObjectToArray(obj) {
+    if(!Object.entries(obj)) {
+      return [];
+    }
+
+    return Object.entries(obj).map(([key, value]) => {
+      return {
+        id: key,
+        ...value
+      };
+    });
+  }
+
+  #transformObjectsToArrays(obj) {
+    return Object.entries(obj).map(([key, value]) => {
+      return Object.entries(value).map(([childKey, childValue]) => {
+        return {
+          userId: key,
+          id: childKey,
+          ...childValue,
+        };
+      });
+    }).flat(1);
+  }
+  
+  #transformArr(memory) {
+    return {
+      ...memory,
+      date: new Date(memory.date).toLocaleDateString(),
+    };
   }
 }
 

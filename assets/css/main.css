@@ -13,6 +13,7 @@
 /* Pages */
 @import url('./sign-in.css');
 @import url('./home.css');
+@import url('./other-memories.css');
 
 html, body {
   font-size: 16px;
